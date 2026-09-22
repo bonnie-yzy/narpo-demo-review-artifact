@@ -5,8 +5,7 @@
 Static companion page with the paper abstract, method overview, training
 figures, and two listening chapters:
 
-- Zero-shot Voice Cloning: 4 English and 4 Chinese examples selected for the
-  paper demo.
+- Zero-shot Voice Cloning: 15 English and 15 Chinese examples.
 - Decoding Robustness: matched Base, distillation, and NARPO examples across
   eight decoding budgets and CFG 0/2. CFG and step distillation are separate models.
 
