@@ -89,7 +89,8 @@ function switchDecoding(records, cfg, steps, controller) {
     record.duration = record.durations[key];
     record.position = 0;
     const name = record.role === "distill" ? (cfg === "0" ? "CFG Distill" : "Step Distill") :
-      record.role === "base" ? "OmniVoice · Base" : "NARPO · Ours";
+      record.role === "base" ? "OmniVoice · Base" :
+      record.role === "base_pos5" ? "Base · position_temperature=5" : "NARPO · Ours";
     record.label = `${name}, ${record.sample}, ${steps} Steps, CFG ${cfg}`;
   });
   return true;
@@ -197,9 +198,8 @@ function initializePage() {
     window.addEventListener("hashchange", fromHash);
   });
   document.querySelectorAll("#listening .audio-group").forEach(group => {
-    const rows = Array.from(group.querySelectorAll(".audio-row"))
-      .filter(row => getComputedStyle(row).display !== "none");
-    let visible = Math.min(4, rows.length);
+    const rows = Array.from(group.querySelectorAll(".audio-row"));
+    let visible = Math.min(3, rows.length);
     if (rows.length <= visible) return;
     const more = document.createElement("button");
     more.type = "button";

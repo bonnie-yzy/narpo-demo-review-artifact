@@ -10,6 +10,9 @@ figures, and two listening chapters:
 - Decoding Robustness: matched Base, distillation, and NARPO examples across
   eight decoding budgets and CFG 0/2. CFG and step distillation are separate models.
 
+Both chapters also include Base with position temperature 5 alongside the
+position-temperature-0 results. The page notes the inference settings.
+
 ## Preview and hosting
 
 Serve this directory with any static HTTP server. No build, backend, package

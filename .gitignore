@@ -14,3 +14,5 @@
 !/assets/audio/*.mp3
 !/assets/robustness/
 !/assets/robustness/*.wav
+!/assets/position-temp5/
+!/assets/position-temp5/*.wav
