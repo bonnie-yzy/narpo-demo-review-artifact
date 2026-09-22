@@ -1,0 +1,16 @@
+# Only the reviewed static publication surface belongs in this repository.
+*
+!/.gitignore
+!/.nojekyll
+!/README.md
+!/index.html
+!/page.js
+!/style.css
+!/assets/
+!/assets/method-overview.png
+!/assets/training-*.svg
+!/assets/audio/
+!/assets/audio/*.wav
+!/assets/audio/*.mp3
+!/assets/robustness/
+!/assets/robustness/*.wav
